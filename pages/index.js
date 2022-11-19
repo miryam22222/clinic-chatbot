@@ -1,27 +1,41 @@
 
 import Message from "../components/message";
-import { useApiData } from "../hooks/data";
+import { loadWeatherData } from "../hooks/data";
+import citiesData from '../cities.json';
+
+function getEmoji(temperature) {
+    if (temperature > 20) {
+        return "☀";
+    } else if (temperature > 6) {
+        return "☁";
+    } else {
+        return "❄";
+    }
+}
 
 // Our main page. Here we are loading data "on the client"
 // And showing some loading screen(s) while waiting for the data to be ready
 export default function IndexPage() {
 
-  const { data, isLoading, isError } = useApiData();
+    const { data, isLoading, isError } = loadWeatherData(citiesData);
+    if (isLoading) return <Message content="Loading..." />
+    if (isError) return <Message content="An error occured..." />
+    if (!data) return <Message content="No data could be loaded..." />
 
-  if (isLoading) return <Message content="Loading..." />
-  if (isError) return <Message content="An error occured..." />
-  if (!data) return <Message content="No data could be loaded..." />
-
-  // Just for convenience
-  const records = data.teams;
-
-  return (
-    <>
-      <div className="row">
-        {records.map(record => {
-          return <div key={record.id} className="item"><div className="content">{record.name}</div></div>
-        })}
-      </div>
-    </>
-  )
+    return (
+        <div className="row">
+            {
+                data.map(record => {
+                    const temperature = record.json.current_weather.temperature;
+                    return (
+                        <div key={record.cityData.name} className="item">
+                            <h3 className="city">{record.cityData.name}</h3>
+                            <p className="emoji">{getEmoji(temperature)}</p>
+                            <h1 className="temperature">{temperature}</h1>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
 }

@@ -1,19 +1,31 @@
 import useSWR from "swr";
-import { API_ENDPOINT } from "../config";
+import { WEATHER_ENDPOINT } from "../config";
 
-// UseSWR needs a fetcher function.
-// This is a generic one based on vanilla fetch().
-const fetcher = (...args) => fetch(...args).then(res => res.json())
 
-// This is just a dummy function demonstrating preferred use of useSWR
-// You create your own use* function per API endpoint
-// And return a consistent response object that you can use to
-// showing loading and/or error screens
-export function useApiData() {
-  const { data, error } = useSWR(API_ENDPOINT, fetcher)
-  return {
-    data,
-    isLoading: !error && !data,
-    isError: error
-  }
+function arrayFetcher(...urlArr) {
+    const fetcher = (u) => fetch(u.url).then((res) => res.json().then((json) => {
+        return {
+            json: json,
+            cityData: u.city
+        }
+    }));
+    const result = Promise.all(urlArr.map(fetcher));
+    // result.then((res) => console.log(res))
+    return result;
 }
+
+export function loadWeatherData(cityCoords) {
+    const urlArray = cityCoords.map((city) => {
+        return {
+            url: `${WEATHER_ENDPOINT}?latitude=${city.lat}&longitude=${city.long}&current_weather=true`,
+            city: city
+        }
+    });
+    const { data, error } = useSWR(urlArray, arrayFetcher);
+    return {
+        data,
+        isLoading: !error && !data,
+        isError: error
+    }
+}
+
