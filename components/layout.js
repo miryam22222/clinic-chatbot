@@ -9,7 +9,7 @@ export default function Layout({ children }) {
                 <div id="main">
                     <title>Weather in random locations</title>
                     <h1 className="content">Weather in the World</h1>
-                    <SortFilter />
+                    {/* <SortFilter setSortKey={setSortKey/> */}
                     {children}
                 </div>
             </div>
