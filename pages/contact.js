@@ -52,7 +52,7 @@ export default function ContactPage() {
     <div className="row">
       <div className="item">
         <div className="content">
-          Contact us if you found any mistakes or missing data, or if you just want to say hello!
+          Contact us for requests, we'll consider adding your city.
         </div>
         <div className="content">
           {formResponseStatus ?
