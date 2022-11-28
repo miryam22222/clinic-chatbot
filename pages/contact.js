@@ -52,7 +52,7 @@ export default function ContactPage() {
     <div className="row">
       <div className="item">
         <div className="content">
-          Contact us for requests, we'll consider adding your city.
+          Contact us for requests, we will consider adding your city.
         </div>
         <div className="content">
           {formResponseStatus ?
