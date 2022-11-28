@@ -49,7 +49,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="row">
+    <div className="form-box">
       <div className="item">
         <div className="content">
           Contact us for requests, we will consider adding your city.
@@ -58,9 +58,9 @@ export default function ContactPage() {
           {formResponseStatus ?
             <div>{formResponseStatus === 200 ? "Thank you." : "Something went wrong."}</div> :
             <form onSubmit={handleSubmit}>
-              <input id="form-name" placeholder="Your name" value={formData.name} onChange={handleChange} required />
-              <input id="form-email" type="email" placeholder="Your email" value={formData.email} onChange={handleChange} required />
-              <textarea id="form-comment" placeholder="Your comment" value={formData.comment} onChange={handleChange}></textarea>
+              <input id="form-name" placeholder="Your name" value={formData.name} onChange={handleChange} required /><br></br>
+              <input id="form-email" type="email" placeholder="Your email" value={formData.email} onChange={handleChange} required /><br></br>
+              <textarea id="form-comment" placeholder="Your comment" value={formData.comment} onChange={handleChange}></textarea><br></br>
               <button type="submit">Send</button>
             </form>
           }

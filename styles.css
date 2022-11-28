@@ -44,6 +44,10 @@
     margin: 5px;
     padding: 10px;
   }
+
+  .form-box {
+    padding: 10px;
+  }
   
   .item.meta {
     flex-basis: 50%;
