@@ -5,14 +5,14 @@ import config from '../bot/config.js';
 import MessageParser from '../bot/MessageParser.js';
 import ActionProvider from '../bot/ActionProvider.js';
 
-const MyComponent = () => {
-  return (
-    <div>
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
-    </div>
-  );
-};
+export default function ChatbotPage() {
+    return (
+        <div>
+        <Chatbot
+            config={config}
+            messageParser={MessageParser}
+            actionProvider={ActionProvider}
+        />
+        </div>
+    );
+}
