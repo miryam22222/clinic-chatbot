@@ -1,3 +1,4 @@
+import ChatbotPage from "../components/chatbot";
 import Layout from "../components/layout";
 
 // We import our CSS here because Next.js takes care of rendering it for us
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
     return (
         <Layout>
             <Component {...pageProps} />
+            <ChatbotPage />
         </Layout>
-    )
+        )
 }
