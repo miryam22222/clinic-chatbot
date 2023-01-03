@@ -3,16 +3,17 @@
 // in 3 languages: hebrew, english, arabic
 
 import React from 'react';
+import Button from './button.js';
 
 const handleClick = (event) => {
 }
 
-export default function LanguagePicker() {
+const LanguagePicker = () => {
     return (
         <div>
-            <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                Open Menu
-            </Button>
+            <Button></Button>
         </div>
-    )
-}
+    );
+};
+
+export default LanguagePicker;

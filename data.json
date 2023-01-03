@@ -1,0 +1,48 @@
+{
+    "flow": {
+        "language": "en",
+        "basicInfo": {
+            "age": {
+                "age_text": "what is your age?"
+            },
+            "gender": {
+                "question": "gender question",
+                "answer_1": "male",
+                "answer_2": "female"
+            },
+        },
+        "questions_set": {
+            "question_1": {
+                "text": "q answer",
+                "prereqs": {
+                    "age": {
+                        "$gt": 15
+                    },
+                    "gender": "m"
+                }
+            },
+            "question_2": {
+                "text": "q answer",
+                "prereqs": {
+                    "gender": "m"
+                }
+            },
+            "question_3": {
+                "text": "q answer",
+                "prereqs": {
+                    "gender": "m"
+                }
+            }
+        }
+    },
+    {
+        "language": "ru""basicInfo": {
+            "age": {
+                "age_text": "russian question?"
+            },
+        }
+
+    "flow": {
+            "language": "fr"
+        }
+    }

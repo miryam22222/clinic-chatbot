@@ -1,14 +1,17 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
-import DogPicture from '../components/dogPicture.js';
+import { createChatBotMessage, createCustomMessage } from 'react-chatbot-kit';
+import LanguagePicker from '../components/languagePicker.js';
 
 const config = {
-    initialMessages: [createChatBotMessage(`Hi! I'm clinicbot`)],
-    widgets: [
-        {
-            widgetName: 'dogPicture',
-            widgetFunc: (props) => <DogPicture {...props} />,
-        },
-    ],
+    initialMessages: [createCustomMessage('pickLangugage', 'languagePicker')],
+    // widgets: [
+    //     {
+    //         widgetName: 'languagePicker',
+    //         widgetFunc: (props) => <LanguagePicker {...props} />,
+    //     },
+    // ],
+    customMessages: {
+        languagePicker: (props) => <LanguagePicker {...props} />,
+    }
 };
 
 export default config;

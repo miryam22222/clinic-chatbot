@@ -12,9 +12,13 @@ body {
 
 .react-chatbot-kit-chat-header {}
 
-.react-chatbot-kit-chat-input-container {}
+.react-chatbot-kit-chat-input-container {
+    display: none;
+}
 
-.react-chatbot-kit-chat-message-container {}
+.react-chatbot-kit-chat-message-container {
+    overflow: hidden;
+}
 
 .react-chatbot-kit-chat-input {}
 
@@ -22,9 +26,7 @@ body {
 
 .react-chatbot-kit-chat-input::placeholder {}
 
-.react-chatbot-kit-chat-btn-send {
-    background-color: rgb(119, 0, 255);
-}
+.react-chatbot-kit-chat-btn-send {}
 
 .react-chatbot-kit-chat-btn-send-icon {}
 
