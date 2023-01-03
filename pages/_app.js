@@ -7,9 +7,6 @@ import "../styles.css";
 // This is the entrypoint to our app - all our code and logic is "within" its scope
 export default function App({ Component, pageProps }) {
     return (
-        <Layout>
-            <Component {...pageProps} />
-            <ChatbotPage />
-        </Layout>
-        )
+        <ChatbotPage />
+    )
 }

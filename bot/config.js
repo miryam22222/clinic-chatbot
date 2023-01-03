@@ -1,7 +1,13 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
+import { createChatBotMessage, createCustomMessage } from 'react-chatbot-kit';
 
 const config = {
-  initialMessages: [createChatBotMessage(`Hello world`)],
+    initialMessages: [createCustomMessage('value to input', 'custom')],
+    widgets: [
+        {
+            widgetName: 'dogPicture',
+            widgetFunc: (props) => <DogPicture {...props} />,
+        },
+    ]
 };
 
 export default config;

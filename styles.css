@@ -1,114 +1,59 @@
-/* !!!!!!!!!!!!!!!!!!!! */
-/* LAYOUT HELPERS */
-/* !!!!!!!!!!!!!!!!!!!! */
-
-#container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .sort-filter-row {
-    align-items: center;
-    display: flex;
-    margin-bottom: 5px;
-    font-size: 20px;
-    text-indent: 50px;
-  }
-
-  .city {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .item {
-    box-sizing: border-box;
-    flex-grow: 0;
-    flex-basis: 100%;
-    border: 1px solid rgb(85, 0, 155);
-    border-radius: 15px;
-    margin-block-end: 5px;
-    align-content: center;
-    background-color: rgb(187, 223, 187);
-  }
-  
-  .content {
-    /* Usage: always nest inside .item */
-    flex-grow: 0;
-    flex-basis: 100%;
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 10px;
-  }
-
-  .form-box {
-    padding: 10px;
-  }
-  
-  .item.meta {
-    flex-basis: 50%;
-  }
-  
-  .item.cell {
-    flex-basis: 25%;
-  }
-  
-  .sort {
-      text-align: left;
-  }
-  
-  .filter {
-      margin-right: 0;
-      text-align: left;
-      display: inline;
-  }
-  
-  #sort-filter {
-      width: 100%;
-  }
-  
-  /* adjustments for medium screens, like some tablets or landscape on a mobile */
-  @media (min-width: 576px) {
-    .item {
-      flex-basis: 50%;
-    }
-  }
-  
-  /* adjustments for medium-large screens, like some tablets */
-  @media (min-width: 768px) {
-    .item {
-      flex-basis: 33.3333333333333%;
-    }
-  }
-  
-  /* adjustments for large screens, like laptops and desktops */
-  @media (min-width: 992px) {
-    #container {
-      width: 992px;
-      margin: 0 auto;
-    }
-  
-    .item {
-      flex-basis: 25%;
-    }
-  }
-  
-  /* !!!!!!!!!!!!!!!!!!!! */
-  /* END LAYOUT HELPERS */
-  /* !!!!!!!!!!!!!!!!!!!! */
-  
-  body {
+body {
     background-color: #c5e5e9;
     color: #2d2c2c;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-  }
-  
-  .emoji {
-      font-size: 40px;
-      color: rgb(168, 0, 168);
-  }
+}
+
+
+.react-chatbot-kit-chat-container {}
+
+.react-chatbot-kit-chat-inner-container {}
+
+.react-chatbot-kit-chat-header {}
+
+.react-chatbot-kit-chat-input-container {}
+
+.react-chatbot-kit-chat-message-container {}
+
+.react-chatbot-kit-chat-input {}
+
+.react-chatbot-kit-chat-input-form {}
+
+.react-chatbot-kit-chat-input::placeholder {}
+
+.react-chatbot-kit-chat-btn-send {
+    background-color: rgb(119, 0, 255);
+}
+
+.react-chatbot-kit-chat-btn-send-icon {}
+
+.react-chatbot-kit-chat-bot-message-container {}
+
+.react-chatbot-kit-chat-bot-avatar-container {}
+
+.react-chatbot-kit-chat-bot-avatar-icon {}
+
+.react-chatbot-kit-chat-bot-avatar-letter {}
+
+.react-chatbot-kit-chat-bot-message {}
+
+.react-chatbot-kit-chat-bot-message-arrow {}
+
+.react-chatbot-kit-chat-bot-loading-icon-container {}
+
+.chatbot-loader-container {}
+
+#chatbot-loader #chatbot-loader-dot1 {}
+
+#chatbot-loader #chatbot-loader-dot2 {}
+
+#chatbot-loader #chatbot-loader-dot3 {}
+
+.react-chatbot-kit-error {}
+
+.react-chatbot-kit-error-container {}
+
+.react-chatbot-kit-error-header {}
+
+.react-chatbot-kit-error-docs {}
