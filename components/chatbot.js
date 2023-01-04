@@ -15,7 +15,6 @@ export default function ChatbotPage() {
                 actionProvider={ActionProvider}
             >
             </Chatbot>
-            <Footer />
         </div>
     );
 }

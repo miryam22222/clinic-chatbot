@@ -1,9 +1,14 @@
-// Just a generic button
+import React, { useState } from 'react';
 
-export default function Button({ children, onClick }) {
+export default function Button({ children }) {
+    const [language, setLanguage] = useState('');
+
+    const handleChange = (language) => {
+        setLanguage(language);
+    };
+
     return (
-        <button onClick={onClick}>
-            Language
+        <button onClick={() => handleChange(children)}>
             {children}
         </button>
     )

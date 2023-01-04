@@ -2,7 +2,7 @@ import { createChatBotMessage, createCustomMessage } from 'react-chatbot-kit';
 import LanguagePicker from '../components/languagePicker.js';
 
 const config = {
-    initialMessages: [createCustomMessage('pickLangugage', 'languagePicker')],
+    initialMessages: [createCustomMessage('pickLanguage', 'languagePicker')],
     // widgets: [
     //     {
     //         widgetName: 'languagePicker',
