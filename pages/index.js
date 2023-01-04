@@ -4,7 +4,6 @@ import { loadWeatherData } from "../hooks/data";
 import citiesData from '../cities.json';
 import { sortByCities, filterOut } from '../utils';
 import { useState } from "react";
-import SortFilter from "../components/sort-filter";
 
 function getEmoji(temperature) {
     if (temperature > 20) {
@@ -62,28 +61,4 @@ export default function IndexPage() {
 
     const cities = filterOut(sortByCities(data, sortKey), checkedItems);
 
-    return (
-        <>
-            <SortFilter sortHandler={handleSort}
-                checkboxes={checkboxes}
-                checkedItems={checkedItems}
-                handleChange={handleChecked} />
-            <div className="row">
-                {
-                    cities.map(record => {
-                        if (!record.filtered) {
-                            const temperature = record.json.current_weather.temperature;
-                            return (
-                                <div key={record.cityData.name} className="item">
-                                    <h3 className="city">{record.cityData.name}</h3>
-                                    <p className="emoji">{getEmoji(temperature)}</p>
-                                    <h1 className="temperature">{temperature}</h1>
-                                </div>
-                            )
-                        }
-                    })
-                }
-            </div>
-        </>
-    )
 }

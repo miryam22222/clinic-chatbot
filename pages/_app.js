@@ -1,5 +1,4 @@
 import ChatbotPage from "../components/chatbot";
-import Layout from "../components/layout";
 
 // We import our CSS here because Next.js takes care of rendering it for us
 import "../styles.css";

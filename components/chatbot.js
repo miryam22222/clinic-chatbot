@@ -4,7 +4,7 @@ import 'react-chatbot-kit/build/main.css';
 import config from '../bot/config.js';
 import MessageParser from '../bot/MessageParser.js';
 import ActionProvider from '../bot/ActionProvider.js';
-import Footer from '../components/footer.js';
+import Header from '../components/header.js';
 
 export default function ChatbotPage() {
     return (
@@ -13,6 +13,7 @@ export default function ChatbotPage() {
                 config={config}
                 messageParser={MessageParser}
                 actionProvider={ActionProvider}
+                headerText={<Header/>}
             >
             </Chatbot>
         </div>

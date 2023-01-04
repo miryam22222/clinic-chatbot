@@ -1,21 +1,25 @@
-// react component with buttons to pick a language
-// One big button with a dropdown menu to pick a language, and 4 predefined buttons under it
-// in 3 languages: hebrew, english, arabic
-
 import React, { useState } from 'react';
 import Button from './button.js';
 import Dropdown from './dropdown.js';
 
-export default function LanguagePicker() {
-    const [language, setLanguage] = useState('');
+export default function LanguagePicker(props) {
+    const [visibility, setVisibility] = useState(true);
 
+    const handleChange = (chosenLanguage) => {
+        setVisibility(false);
+        props.actions.handleLanguagePicked(chosenLanguage);
+    };
+
+    if (!visibility) {
+        return null;
+    }
     return (
         <div>
-            <Dropdown children={["Arabic", "Indonesian"]}></Dropdown>
+            <Dropdown >{["Arabic", "Indonesian"]}</Dropdown>
             <br></br>
-            <Button children={"עברית"}></Button>
-            <Button children={"English"}></Button>
-            <Button children={"Русский"}></Button>
+            <Button handleClick={handleChange}>{"עברית"}</Button>
+            <Button handleClick={handleChange}>{"English"}</Button>
+            <Button handleClick={handleChange}>{"Русский"}</Button>
         </div>
     );
 };

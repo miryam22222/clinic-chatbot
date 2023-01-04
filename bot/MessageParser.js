@@ -5,15 +5,15 @@ const MessageParser = ({ children, actions }) => {
     const [language, setLanguage] = useState('');
 
 
-    const parse = (message) => {
-        if (message.includes('hello')) {
-            actions.handleHello();
-        }
+    // const parse = (message) => {
+    //     if (message.includes('hello')) {
+    //         actions.handleHello();
+    //     }
 
-        if (message.includes('dog')) {
-            actions.handleDog();
-        }
-    };
+    //     if (message.includes('dog')) {
+    //         actions.handleDog();
+    //     }
+    // };
 
     useEffect(() => {
         if (language) {
@@ -25,8 +25,7 @@ const MessageParser = ({ children, actions }) => {
         <div>
             {React.Children.map(children, (child) => {
                 return React.cloneElement(child, {
-                    parse: parse,
-                    actions,
+                    actions
                 });
             })}
         </div>

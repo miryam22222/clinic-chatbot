@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 
-export default function Button({ children }) {
-    const [language, setLanguage] = useState('');
-
-    const handleChange = (language) => {
-        setLanguage(language);
-    };
+export default function Button({ children, handleClick }) {
 
     return (
-        <button onClick={() => handleChange(children)}>
+        <button onClick={() => handleClick(children)}>
             {children}
         </button>
     )
