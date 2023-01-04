@@ -1,0 +1,245 @@
+{
+    "win1": [
+        {
+            "language": "English",
+            "shortLang": "EN",
+            "win2": {
+                "intro": "Hi! We are The Clinic of Law Education of the Hebrew University in Jerusalem and we would like to help you around :)",
+                "button": "let's begin!",
+                "clinicsButtons": [
+                    {
+                        "clinicID": 1,
+                        "clinicName": "Women in Economics",
+                        "description": "The clinic for women and economy examines questions related to women in business, at work, in the home economy and in setting the budget policy.",
+                        "clinicActions (win3)": [
+                            {
+                                "actionName": "Supplementary income",
+                                "actionDescription": "..."
+                            },
+                            {
+                                "actionName": "Unlawful dismissal",
+                                "actionDescription": "..."
+                            },
+                            {
+                                "actionName": "Guaranteed minimal income",
+                                "actionDescription": "..."
+                            }
+                        ]
+                    },
+                    {
+                        "clinicID": 2,
+                        "clinicName": "Innocence",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 3,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 4,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 5,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 6,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 7,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 8,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 9,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    }
+                ],
+                "win4": {
+                    "contactButton": "Do you want to cantact us?",
+                    "decitionButtons": [
+                        {
+                            "yes": "yes",
+                            "no": "no"
+                        }
+                    ],
+                    "appealQuestions": [
+                    {
+                        "fullName": "What is your full name?"
+                    },
+                    {
+                        "phoneNum": "Israeli phone number?"
+                    },
+                    {
+                        "ageButton": "Age?"
+                    },
+                    {
+                        "clinicChoice": "To which clinic would you like to send your appeal?"
+                    },
+                    {
+                        "appealSubject": "What is the subject you want to make an appeal about?"
+                    },
+                    {
+                        "appealContent": "What can we help you with? Please describe your appeal"
+                    },
+                    {
+                        "appealCheck": "Thank you for your appeal :) We'll make our best efforts to contact you as soon as we can!"
+                    },
+                    {
+                        "goodbyeMSG": "Have a great day!"
+                    }
+                    ]
+                }
+            }
+        },
+
+        {
+            "language": "Hebrew",
+            "shortLang": "HE",
+            "win2": {
+                "intro": "היי! אנחנו הקליניקה לחינוך משפטי באוניברסיטה העברית בירושלים, ונשמח לעזור לך :)",
+                "button": "בואו נתחיל!",
+                "clinicsButtons": [
+                    {
+                        "clinicID": 1,
+                        "clinicName": "נשים וכלכלה",
+                        "description": "הקליניקה לנשים וכלכלה בוחנת שאלות הקשורות לנשים בעסקים, בעבודה, בכלכלה הביתית ובקביעת המדיניות התקציבית.",
+                        "win3": [
+                            {
+                                "actionName": "השלמת הכנסה",
+                                "actionDescription": "..."
+                            },
+                            {
+                                "actionName": "פיטורין שלא כדין",
+                                "actionDescription": "..."
+                            },
+                            {
+                                "actionName": "הבטחת הכנסה",
+                                "actionDescription": "..."
+                            }
+                        ]
+                    },
+                    {
+                        "clinicID": 2,
+                        "clinicName": "חפות",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 3,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 4,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 5,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 6,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 7,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 8,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    },
+                    {
+                        "clinicID": 9,
+                        "clinicName": "...",
+                        "description": "...",
+                        "clinicActions (win3)": [
+                        ]
+                    }
+                ],
+                "win4": {
+                    "contactButton": "האם ברצונכם ליצור קשר עם העמותה?",
+                    "decitionButtons": [
+                        {
+                            "yes": "כן",
+                            "no": "לא"
+                        }
+                    ],
+                    "appealQuestions": [
+                    {
+                        "fullName": "מהו שמך המלא?"
+                    },
+                    {
+                        "phoneNum": "מספר טלפון (ישראלי)?"
+                    },
+                    {
+                        "ageButton": "גיל?"
+                    },
+                    {
+                        "clinicChoice": "לאיזו קליניקה תרצה לפנות?"
+                    },
+                    {
+                        "appealSubject": "מהו נושא הפנייה?"
+                    },
+                    {
+                        "appealContent": "במה נוכל לעזור? אנא פרט את הבקשה"
+                    },
+                    {
+                        "appealCheck": "תודה על פניינך :) ניצור קשר בהקדם!"
+                    },
+                    {
+                        "goodbyeMSG": "שיהיה לך יום נהדר!"
+                    }
+                    ]
+                }
+            }
+        }
+    ]
+}
