@@ -15,11 +15,7 @@ export default function LanguagePicker(props) {
     }
     return (
         <div>
-            <Dropdown >{["Arabic", "Indonesian"]}</Dropdown>
-            <br></br>
-            <Button handleClick={handleChange}>{"עברית"}</Button>
-            <Button handleClick={handleChange}>{"English"}</Button>
-            <Button handleClick={handleChange}>{"Русский"}</Button>
+            <Dropdown handleSubmit={handleChange}>{["Arabic", "Indonesian"]}</Dropdown>
         </div>
     );
 };
