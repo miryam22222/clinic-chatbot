@@ -13,7 +13,7 @@ export default function ChatbotPage() {
                 config={config}
                 messageParser={MessageParser}
                 actionProvider={ActionProvider}
-                headerText={<Header/>}
+                headerText={<Header />}
             >
             </Chatbot>
         </div>

@@ -12,6 +12,7 @@ const config = {
     ],
     customMessages: {
         languagePicker: (props) => <LanguagePicker {...props} />,
+        intro: (props) => <Intro {...props} />,
     }
 };
 
