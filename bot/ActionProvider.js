@@ -12,7 +12,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     };
 
     const handleStartConversation = () => {
-        const botMessage = createChatBotMessage('Test');
+        const botMessage = createCustomMessage('Test', 'scroller');
         setState((prev) => ({
             ...prev,
             messages: [...prev.messages, botMessage],
