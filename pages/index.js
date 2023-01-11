@@ -1,6 +1,5 @@
 
 import Message from "../components/message";
-import { sortByCities, filterOut } from '../utils';
 import { useState } from "react";
 
 // Our main page. Here we are loading data "on the client"
