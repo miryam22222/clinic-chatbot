@@ -5,12 +5,14 @@ body {
     text-align: center;
 }
 
-
 .react-chatbot-kit-chat-container {
-    width: max-content;
+    position: relative;
 }
 
-.react-chatbot-kit-chat-inner-container {}
+.react-chatbot-kit-chat-inner-container {
+    width: 390px;
+    height: 100%;
+}
 
 .react-chatbot-kit-chat-header {
     color: #303AAA;
@@ -26,8 +28,8 @@ body {
 }
 
 .react-chatbot-kit-chat-message-container {
-    overflow: hidden;
     background-color: #F5F3F1;
+    height: 700px;
 }
 
 .react-chatbot-kit-chat-input {}
@@ -69,3 +71,32 @@ body {
 .react-chatbot-kit-error-header {}
 
 .react-chatbot-kit-error-docs {}
+
+.blue-border {
+    width: 214px;
+    height: 282px;
+    border: 2px solid #303AAA;
+    border-radius: 20px;
+    background-color: #f5f3f1;
+    box-sizing: border-box;
+    left: 20px;
+    margin-left: 11px;
+    word-wrap: break-word;
+    padding-top: 20px;
+}
+
+.text-in-card {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 93.6%;
+    /* or 23px */
+
+    text-align: right;
+
+    color: #303AAA;
+
+
+
+}

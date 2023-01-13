@@ -6,7 +6,7 @@ import MessageParser from '../bot/MessageParser.js';
 import ActionProvider from '../bot/ActionProvider.js';
 import Header from '../components/header.js';
 
-export default function ChatbotPage() {
+export default function ChatbotPage({ props }) {
     return (
         <div>
             <Chatbot
@@ -16,7 +16,7 @@ export default function ChatbotPage() {
                 headerText={<Header />}
             >
             </Chatbot>
-        </div>
+        </div >
     );
 }
 

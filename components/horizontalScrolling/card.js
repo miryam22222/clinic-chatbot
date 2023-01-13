@@ -1,22 +1,11 @@
-export default function Card() {
+import React from 'react';
+
+export default function Card({ children }) {
     // const visibility = React.useContext(VisibilityContext);
 
     return (
-        <div
-
-            style={{
-                width: '160px',
-            }}
-            tabIndex={0}
-        >
-            <div className="card">
-                <div>{"123123"}</div>
-            </div>
-            <div
-                style={{
-                    height: '200px',
-                }}
-            />
+        <div className="card">
+            {children}
         </div>
     );
 }
