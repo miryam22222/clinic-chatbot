@@ -1,29 +1,28 @@
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Button from 'react-bootstrap/Button';
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from 'react';
 
 
-export default function Dropdown({ children, handleSubmit }) {
 // export default function Dropdown({ children }) {
+export default function NewDropDown({ children, handleSubmit }) {
 
-    console.log("primary langs: " + children);
-    return (
-        <label>
-            <select id="dropDownSelector" onChange={handleSubmit}>
-            {/* <select id="dropDownSelector"> */}
-            <option value="">choose your language</option>
-                {children.map(item => (
-                    <option key={item} value={item}>{item}</option>
-                ))}
-                <option disabled class="seperator">────────</option>
-                {children.map(item => (
-                    <option key={item} value={item}>{item}</option>
-                ))}
-                <option disabled class="seperator">────────</option>
-                {children.map(item => (
-                    <option value={item}>{item}</option>
-                ))}
-            </select>
-        </label>
-    );
+return (
+    // <select id="dropDownSelector" onChange={handleSubmit}></select>
+    <Dropdown as={ButtonGroup}>
+      <Button variant="success">Select your language</Button>
+
+      <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+
+      <Dropdown.Menu>
+        {children.map(item => (
+            <Dropdown.Item key={item} onClick={handleSubmit}>{item}</Dropdown.Item>
+        ))}
+      </Dropdown.Menu>
+    </Dropdown>
+  );
 
     // return (
     //     <label>
