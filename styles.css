@@ -28,6 +28,7 @@ body {
 }
 
 .react-chatbot-kit-chat-message-container {
+    padding: 0;
     background-color: #F5F3F1;
     height: 700px;
 }
@@ -72,14 +73,14 @@ body {
 
 .react-chatbot-kit-error-docs {}
 
-.blue-border {
+.card {
     width: 214px;
     height: 282px;
     border: 2px solid #303AAA;
     border-radius: 20px;
     background-color: #f5f3f1;
     box-sizing: border-box;
-    left: 20px;
+    left: 55px;
     margin-left: 11px;
     word-wrap: break-word;
     padding-top: 20px;
@@ -91,12 +92,41 @@ body {
     font-weight: 700;
     font-size: 25px;
     line-height: 93.6%;
-    /* or 23px */
-
     text-align: right;
-
     color: #303AAA;
+}
 
+.example {
+    width: 301px;
+    height: 64px;
+    border: 2px solid #303AAA;
+    border-radius: 15px;
+    background-color: #f5f3f1;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-top: 16px;
+    word-wrap: break-word;
+    font-family: 'Noto Sans', sans-serif;
+    color: #303AAA;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /** put box in the middle of the container */
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
+.example-text {
+    font-family: 'Noto Sans', sans-serif;
+    color: #303AAA;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }

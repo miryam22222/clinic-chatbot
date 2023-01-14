@@ -1,26 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
-import Card from './card';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Example from './examples';
 
-export default function ClinicScroller() {
+
+
+export default function ClinicScroller({ children }) {
+    const [selected, setSelected] = useState(children[0].clinic.examples);
+
+    const slideChanged = (slide) => {
+        let index = slide.activeIndex;
+        setSelected(children[index].clinic.examples);
+        console.log('slide change');
+    }
+
     return (
-        <Swiper
-            dir="rtl"
-            slidesPerView={'auto'}
-            centeredSlides={true}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-        >
-            <SwiperSlide className="blue-border">
-                <div className="text-in-card">
-                    english text 123 123 123
+        <>
+            <Swiper
+                dir="rtl"
+                slidesPerView={'auto'}
+                centeredSlides={true}
+                onSlideChange={(slide) => slideChanged(slide)}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <div>
+                    {children.map((item) => {
+                        return <SwiperSlide className="card">
+                            <div className="text-in-card">
+                                {item.clinic.description}
+                            </div>
+                        </SwiperSlide>
+                    })}
                 </div>
-            </SwiperSlide>
-            <SwiperSlide className="blue-border">123</SwiperSlide>
-            <SwiperSlide className="blue-border">123</SwiperSlide>
-
-        </Swiper >
+            </Swiper >
+            <Example>{selected}</Example>
+        </>
     );
 
 }
