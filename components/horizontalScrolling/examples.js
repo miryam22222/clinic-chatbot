@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Example({ children }) {
+    // todo: replace Examples with data from supabase
     return (
         <div>
             <div className='example-text'>Examples:</div>

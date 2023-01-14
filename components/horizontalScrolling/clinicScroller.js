@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Button from '../button';
 import Example from './examples';
 
 
@@ -12,6 +13,10 @@ export default function ClinicScroller({ children }) {
         let index = slide.activeIndex;
         setSelected(children[index].clinic.examples);
         console.log('slide change');
+    }
+
+    const handleClick = () => {
+        console.log('clicked');
     }
 
     return (
@@ -34,6 +39,7 @@ export default function ClinicScroller({ children }) {
                 </div>
             </Swiper >
             <Example>{selected}</Example>
+            <Button handleClick={handleClick}>Continue</Button>
         </>
     );
 
